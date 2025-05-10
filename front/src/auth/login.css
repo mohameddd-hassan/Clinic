@@ -1,0 +1,127 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Register Page Container */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background: url(https://media.istockphoto.com/id/1412374771/vector/simple-illustration-set-of-medical-workers.jpg?s=2048x2048&w=is&k=20&c=LHUJH--Gl0Nrk1aeNxnJlMfLFK_APQpvaza3d69kFl4=) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Register Box */
+.login-form {
+    width: 100%;
+    max-width: 420px;
+    position: absolute;
+    /* top: 50%; */
+    left: 34.5%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px); /* تأثير زجاجي */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Input Fields */
+.login-field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.login-label {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2f9bb1;
+    margin-bottom: 6px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.login-input:focus {
+    border-color: #444445;
+    box-shadow: 0px 0px 6px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Register Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #36a9c0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.login-btn:hover {
+    background: #24bcde;
+    transform: scale(1.03);
+}
+
+/* Already have an account Link */
+.login-link {
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #36a9c0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+    color: #24bcde;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-form {
+        max-width: 90%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form {
+        padding: 25px;
+        border-radius: 10px;
+    }
+    .login-input {
+        font-size: 15px;
+        padding: 10px;
+    }
+    .login-btn {
+        font-size: 15px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,325 @@
+/* General Container for About Us Page */
+.about-us-container {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0 auto;
+    padding: 60px 20px;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* About Us Header */
+  .about-header {
+    text-align: center;
+    margin-bottom: 50px;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .about-header h1 {
+    font-size: 3.5rem;
+    color: #2d4f5f;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .about-header p {
+    font-size: 1.3rem;
+    color: #777;
+    line-height: 1.6;
+  }
+  
+  /* About Content Section */
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  .about-text {
+    flex: 1;
+    padding-top: 30px;  /* Add some padding on top to move the text down a bit */
+    margin-right: 30px;  /* Optional: Adjust the margin if needed to create space between text and image */
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0a2f4f;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .about-text .btn-primary {
+    background-color: #36a9c0;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-text .btn-primary:hover {
+    background-color: #2e87a5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-image img {
+    width: 80%;  /* Reduce the width from 100% to 80% */
+    max-width: 450px;  /* Set a max-width to prevent the image from becoming too large */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin: 0 auto;  /* Center the image horizontally */
+  }
+  
+  .about-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* How It Works Section */
+  .how-it-works {
+    text-align: center;
+    margin-bottom: 50px;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .how-it-works h2 {
+    font-size: 2.5rem;
+    color: #0a2f4f;
+    margin-bottom: 20px;
+  }
+  
+  .how-it-works p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .how-it-works-steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .step {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .step h3 {
+    font-size: 1.8rem;
+    color: #36a9c0;
+    margin-bottom: 15px;
+  }
+  
+  .step p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Second Image Section */
+  .about-image-2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .about-image-2 img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about-image-2 img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer Section */
+  .about-footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px;
+    background-color: #36a9c0;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .about-footer h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-footer p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .about-footer .btn-primary {
+    background-color: #fff;
+    color: #36a9c0;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-footer .btn-primary:hover {
+    background-color: #e0f7fa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+  }
+  
+  /* === Responsive Design === */
+  
+  /* For Tablets and Smaller Screens */
+  @media (max-width: 1024px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-image img {
+      width: 80%;
+    }
+  
+    .how-it-works-steps {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .step {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .about-footer h2 {
+      font-size: 2rem;
+    }
+  
+    .about-footer p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* For Mobile Screens */
+  @media (max-width: 768px) {
+    .about-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-header p {
+      font-size: 1.2rem;
+    }
+  
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-image img {
+      width: 100%;
+    }
+  
+    .how-it-works h2 {
+      font-size: 2rem;
+    }
+  
+    .how-it-works p {
+      font-size: 1.1rem;
+    }
+  
+    .how-it-works-steps {
+      flex-direction: column;
+    }
+  
+    .step {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .about-footer h2 {
+      font-size: 2rem;
+    }
+  
+    .about-footer p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* For Mobile Portrait */
+  @media (max-width: 480px) {
+    .about-header h1 {
+      font-size: 2rem;
+    }
+  
+    .about-header p {
+      font-size: 1rem;
+    }
+  
+    .about-image img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .how-it-works h2 {
+      font-size: 1.8rem;
+    }
+  
+    .how-it-works p {
+      font-size: 1rem;
+    }
+  
+    .step {
+      width: 100%;
+    }
+  
+    .about-footer h2 {
+      font-size: 1.8rem;
+    }
+  
+    .about-footer p {
+      font-size: 1rem;
+    }
+  }
+  
